@@ -1,0 +1,9 @@
+<MainMenuScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        Button:
+            text: "Translate Speech"
+            on_press: app.root.current = 'translation'
+        Button:
+            text: "Exit"
+            on_press: app.stop()

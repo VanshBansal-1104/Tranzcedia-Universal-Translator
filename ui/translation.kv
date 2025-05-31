@@ -1,0 +1,15 @@
+<TranslationScreen>:
+    BoxLayout:
+        orientation: 'vertical'
+        TextInput:
+            id: text_input
+            hint_text: "Enter text to translate"
+        TextInput:
+            id: lang_code_input
+            hint_text: "Enter target language code (e.g., 'en')"
+        Button:
+            text: "Translate"
+            on_release: root.perform_translation(text_input.text, lang_code_input.text)
+        Label:
+            id: translation_output
+            text: "Translated text will appear here"
